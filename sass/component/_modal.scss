@@ -1,0 +1,196 @@
+/*Модальне Вікно*/
+.hero .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  background-color: $overlay;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero .backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/*Кнопка закриття модалки*/
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal .icon.close {
+  position: relative;
+  top: 9px;
+  left: 9px;
+  transform: translate(-8px, -7px);
+
+  width: 11px;
+  height: 11px;
+
+  cursor: pointer;
+}
+
+/*Modal*/
+.modal .title {
+  padding-top: 40px;
+
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+}
+
+.modal-list .item {
+  margin-bottom: 10px;
+}
+
+.modal-list .item:last-child {
+  margin-bottom: 20px;
+}
+
+.modal .button.primary {
+  margin-top: 30px;
+}
+
+.modal-list .item {
+  position: relative;
+}
+
+.modal-list input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  width: 448px;
+  height: 40px;
+
+  padding-left: 42px;
+}
+
+.modal-form {
+  width: 448px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal .icon {
+  width: 18px;
+  height: 18px;
+
+  position: absolute;
+  top: 35px;
+  left: 12px;
+}
+
+.modal .coment {
+  padding-left: 16px;
+}
+
+.modal .modal-close:focus .icon,
+.modal .modal-close:hover .icon {
+  fill: $accent-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal input:focus + .icon {
+  fill: $accent-color;
+}
+
+.modal .checkbox-link {
+  color: $accent-color;
+}
+
+.modal .coment {
+  height: 120px;
+
+  padding-bottom: 80px;
+}
+
+.modal .item {
+  text-align: left;
+}
+
+.modal .modal-close {
+  cursor: pointer;
+}
+
+.modal .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.modal .icon-checkbox {
+  width: 16px;
+  height: 15px;
+
+  position: absolute;
+
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  margin-left: -24px;
+}
+
+.modal .label-check {
+  padding-left: 24px;
+  margin-left: 12px;
+
+  display: flex;
+  align-items: center;
+}
+
+.modal .checkbox:checked + .icon-checkbox {
+  border: 2px solid $accent-color;
+  background-color: $accent-color;
+
+  background-image: url(../images/full-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.modal input:hover {
+  cursor: pointer;
+}
+
+.modal .label-check:hover {
+  cursor: pointer;
+}
+
+.modal .button.primary {
+  width: 200px;
+}
+
+.modal-form {
+  padding-bottom: 40px;
+}

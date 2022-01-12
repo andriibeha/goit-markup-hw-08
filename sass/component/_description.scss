@@ -1,0 +1,51 @@
+/*Description*/
+.description--title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.description.section {
+  padding-bottom: 0px;
+}
+
+.description--item {
+  text-decoration: none;
+}
+
+.description--list {
+  display: flex;
+}
+
+.description--title {
+  margin-bottom: 10px;
+}
+
+.description--item {
+  margin-right: 30px;
+
+  max-width: 270px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+/*Description Label*/
+.des-label {
+  width: 270px;
+  height: 120px;
+
+  background-color: $secondary-bg-color;
+
+  margin-bottom: 30px;
+}
+
+.des-label--icon {
+  width: 70px;
+  height: 70px;
+  position: relative;
+
+  top: 25px;
+  left: 100px;
+}

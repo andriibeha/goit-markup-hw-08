@@ -1,0 +1,169 @@
+/*Main-Nav*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__logo {
+  margin-right: 93px;
+}
+
+/*Logo*/
+.main-nav__logo {
+  color: $title-text-color;
+  font-family: "Roboto";
+  font-weight: 700;
+
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.main-nav__logo-title {
+  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+/*Header*/
+.site-nav__link {
+  color: $title-text-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+
+    width: 100%;
+    border: 2px solid $before-element-is;
+    border-radius: 2px;
+
+    opacity: 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+}
+
+/*Роблю лінію під текстом*/
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav__item {
+  position: relative;
+}
+
+.site-nav__current {
+  color: $accent-color;
+
+  &::after,
+  &::after {
+    opacity: 1;
+  }
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav__item {
+  margin-right: 50px;
+}
+
+.site-nav__item:last-child {
+  margin-right: 0px;
+}
+
+/*Auth-nav*/
+.auth-nav__link {
+  color: $primary-text-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.auth-nav {
+  display: flex;
+
+  align-items: center;
+
+  margin-left: auto;
+}
+
+.auth-nav__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+/*Page Header*/
+.page-header {
+  display: flex;
+  align-items: center;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.page-header .container {
+  display: flex;
+}
+
+/*Оформлення іконок SVG*/
+.auth-nav__icon {
+  fill: $primary-text-color;
+}
+.auth-nav__icon-email {
+  width: 16px;
+  height: 12px;
+
+  margin-right: 10px;
+}
+
+.auth-nav__icon-phone {
+  width: 10px;
+  height: 16px;
+
+  margin-right: 10px;
+}
+
+/*Рівняю телефоні текст*/
+.auth-nav__link {
+  display: flex;
+  align-items: center;
+
+  &:hover .auth-nav__icon,
+  &:focus .auth-nav__icon {
+    fill: $accent-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

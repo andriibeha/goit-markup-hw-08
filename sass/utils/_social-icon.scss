@@ -1,0 +1,48 @@
+/*Social Icon FOR TEAM SECTION*/
+.social {
+  display: flex;
+
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.social a {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a {
+  margin-right: 10px;
+}
+
+.social a:last-child {
+  margin-right: 0px;
+}
+
+.social .icon {
+  width: 20px;
+  height: 20px;
+
+  fill: $primary-icon-color;
+}
+
+.social a:hover,
+.social a:focus {
+  background-color: $accent-color;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social a:hover .icon,
+.social a:focus .icon {
+  fill: $primary-white-color;
+}

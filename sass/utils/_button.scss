@@ -1,0 +1,56 @@
+/*Оформлюю кнопку головну*/
+.button {
+  color: $primary-white-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.button--primary {
+  background-color: $accent-color;
+  padding: 10px 32px;
+}
+
+.button--primary:hover {
+  cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button--primary {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*Оформлення button type=button*/
+button {
+  border: 0px;
+  border-radius: 4px;
+}
+
+/*Оформляю кнопку другорядну*/
+.button--secondary {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  background-color: $accent-color;
+  color: $primary-white-color;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

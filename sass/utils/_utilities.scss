@@ -1,0 +1,70 @@
+/*Шрифти для текстів та кольори*/
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*Утиліти*/
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body li {
+  list-style-type: none;
+}
+
+/*Обнуляю всі відступи стандартні*/
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+/*Розміри контейнера*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*Падінги для секцій*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*Title*/
+.title {
+  color: $title-text-color;
+
+  font-weight: 700;
+}
