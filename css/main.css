@@ -600,6 +600,9 @@ button {
     text-transform: uppercase;
     margin-bottom: 10px;
   }
+  .description p {
+    margin-bottom: 30px;
+  }
 }
 
 .des-label {
