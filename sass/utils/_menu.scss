@@ -1,0 +1,25 @@
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+
+  padding-left: 40px;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.main-nav button {
+  background: $primary-white-color;
+
+  margin-left: auto;
+  cursor: pointer;
+
+  &:hover .menu-button__icon {
+    fill: $accent-color;
+  }
+}
