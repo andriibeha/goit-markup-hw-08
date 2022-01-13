@@ -195,37 +195,35 @@
   padding-bottom: 40px;
 }
 
-@media screen and (min-width: 480px) {
-  .hero .modal {
-    width: 450px;
-  }
+.hero .modal {
+  width: 450px;
+}
 
-  .modal .title {
-    line-height: 30px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
+.modal .title {
+  line-height: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
 
-  .modal-form {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+.modal-form {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
-  .modal-list input {
-    width: 370px;
-  }
+.modal-list input {
+  width: 370px;
+}
 
-  .modal .label-check {
-    font-size: 12px;
+.modal .label-check {
+  font-size: 12px;
 
-    padding-left: 24px;
+  padding-left: 24px;
 
-    margin-left: 0px;
+  margin-left: 0px;
 
-    margin-bottom: 31px;
-  }
+  margin-bottom: 31px;
+}
 
-  .modal .icon-checkbox {
-    margin-left: -24px;
-  }
+.modal .icon-checkbox {
+  margin-left: -24px;
 }

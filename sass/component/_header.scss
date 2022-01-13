@@ -40,98 +40,92 @@
 
 /*Site-nav*/
 .site-nav {
-  @media screen and (min-width: 480px) {
-    &__link {
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 47px;
-      letter-spacing: 0.02em;
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
 
-      color: $title-text-color;
-    }
+    color: $title-text-color;
+  }
 
-    &__current {
-      color: $accent-color;
-    }
+  &__current {
+    color: $accent-color;
+  }
 
-    &__item {
-      margin-bottom: 32px;
-    }
+  &__item {
+    margin-bottom: 32px;
+  }
 
-    &__item:last-child {
-      margin-bottom: 302px;
-    }
+  &__item:last-child {
+    margin-bottom: 302px;
   }
 }
 
 /*Auth-nav*/
 .auth-nav {
-  @media screen and(min-width: 480px) {
-    &__icon {
-      display: none;
-    }
+  &__icon {
+    display: none;
+  }
 
-    &__link {
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 40px;
+  &__link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
 
-      letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
 
-      color: $primary-text-color;
-    }
+    color: $primary-text-color;
+  }
 
-    &__item {
-      margin-bottom: 32px;
-    }
+  &__item {
+    margin-bottom: 32px;
+  }
 
-    &__item:first-child {
-      margin-bottom: 64px;
-    }
+  &__item:first-child {
+    margin-bottom: 64px;
+  }
 
-    & {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column-reverse;
-    }
+  & {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
 
-    &__item:last-child &__link {
-      color: $accent-color;
-    }
+  &__item:last-child &__link {
+    color: $accent-color;
   }
 }
 
 /*Soc-nav  FOR MOBILE ONLY*/
 .soc-nav {
-  @media screen and (min-width: 480px) {
-    & {
-      display: flex;
+  & {
+    display: flex;
 
-      padding-bottom: 48px;
-    }
+    padding-bottom: 48px;
+  }
 
-    &__link {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
 
-      letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
 
-      color: $accent-color;
+    color: $accent-color;
 
-      margin-right: 10px;
-    }
+    margin-right: 10px;
+  }
 
-    &__link::after {
-      content: "";
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      transform: rotate(90deg);
+  &__link::after {
+    content: "";
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
 
-      margin-left: 10px;
-    }
+    margin-left: 10px;
+  }
 
-    &__item:last-child &__link::after {
-      border: none;
-    }
+  &__item:last-child &__link::after {
+    border: none;
   }
 }

@@ -23,27 +23,48 @@
                 <a href="./index.html" class="main-nav__logo">
                     <span class="main-nav__logo-title">Web</span>Studio
                 </a>
+                <button type="button" class="menu-button " aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="Menu button">
+                        <use class="icon-menu menu-button__icon" href="./images/symbol-defs.svg#menu"></use>
+                        <use class="icon-cross menu-button__icon" href="./images/symbol-defs.svg#menu-close"></use>
+                    </svg>
+                </button>
+            </nav>
     
+            <div class="menu-container " id="menu-container" data-menu>
                 <ul class="site-nav list">
                     <li class="site-nav__item"><a href="./index.html"
-                            class="site-nav__link  link">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link site-nav__current">Портфолио</a></li>
+                            class="site-nav__link site-nav__current link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
                 </ul>
-            </nav>
-            <!--Поле адресу-->
-            <ul class="auth-nav list">
-                <li class="auth-nav__item"><a href="mailto:info@example.com" class="auth-nav__link link auth-nav__adres">
-                        <svg class="auth-nav__icon auth-nav__icon-email">
-                            <use href="./images/symbol-defs.svg#icon-email"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="auth-nav__item"><a href="tel:+380991111111" class="auth-nav__link link auth-nav__tel">
-                        <svg class="auth-nav__icon auth-nav__icon-phone">
-                            <use href="./images/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
+    
+                <!--Поле адресу-->
+                <ul class="auth-nav list">
+                    <li class="auth-nav__item"><a href="mailto:info@example.com"
+                            class="auth-nav__link link auth-nav__adres">
+                            <svg class="auth-nav__icon auth-nav__icon-email">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="auth-nav__item"><a href="tel:+380991111111" class="auth-nav__link link auth-nav__tel">
+                            <svg class="auth-nav__icon auth-nav__icon-phone">
+                                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            +38 096 111 11 11</a></li>
+                </ul>
+    
+                <!--Соцільні мережі силки для мобілки-->
+                <ul class="soc-nav list">
+                    <li class="soc-nav__item"> <a href="" class="soc-nav__link link">Instagram</a> </li>
+                    <li class="soc-nav__item"> <a href="" class="soc-nav__link link">Twitter</a> </li>
+                    <li class="soc-nav__item"> <a href="" class="soc-nav__link link">Facebook</a> </li>
+                    <li class="soc-nav__item"> <a href="" class="soc-nav__link link">LinkedIn</a> </li>
+                </ul>
+            </div>
+    
+    
         </div>
     </header>
     
@@ -249,10 +270,10 @@
     </main>
 
     <!--Футер-->
-    <footer class="footer">
+    <footer class="footer section">
         <div class="container">
             <div class="logo-address">
-                <a href="./index.html" class="main-nav__logo">
+                <a href="./index.html" class="main-nav__logo ">
                     <span class="main-nav__logo-title">Web</span>Studio
                 </a>
     
@@ -292,17 +313,18 @@
                         </svg>
                     </a>
                 </ul>
+    
             </div>
-
+    
             <!--Подпишитесь-->
             <div class="submit">
                 <h2 class="title">
                     подпишитесь на рассылку
                 </h2>
-            
+    
                 <form name="signup" class="signup">
                     <input type="email" name="email" placeholder="E-mail">
-            
+    
                     <button class="button button--primary" type="submit">
                         Подписаться
                         <svg class="icon">
@@ -311,8 +333,10 @@
                     </button>
                 </form>
             </div>
-            
+    
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

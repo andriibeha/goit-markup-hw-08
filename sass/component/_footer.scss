@@ -1,0 +1,151 @@
+.footer {
+  background-color: $first-bg-color;
+
+  text-align: center;
+
+  color: $primary-white-color;
+
+  & .title {
+    color: $primary-white-color;
+  }
+}
+
+/*Колір для лого білий*/
+.footer .main-nav__logo {
+  color: $primary-white-color;
+}
+
+.join {
+  & a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .title {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+
+  &-list a:hover,
+  &-list a:focus {
+    background-color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  margin-bottom: 60px;
+}
+
+.foot {
+  width: 232px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-top: 20px;
+  margin-bottom: 60px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  & span {
+    margin-bottom: 8px;
+  }
+
+  & a {
+    color: $footer-address-color;
+  }
+
+  & .link.adres {
+    margin-bottom: 8px;
+  }
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: $accent-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit {
+  & .title {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+}
+
+/*FORMA*/
+.submit .signup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.signup input {
+  width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: #fff;
+  padding-left: 16px;
+
+  margin-bottom: 20px;
+}
+
+.signup .icon {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+}
+
+.signup .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 200px;
+  height: 50px;
+}

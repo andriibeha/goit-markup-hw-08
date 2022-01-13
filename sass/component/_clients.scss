@@ -1,0 +1,64 @@
+.clients {
+  &--title {
+    text-align: center;
+
+    font-size: 28px;
+    line-height: 33px;
+
+    margin-bottom: 30px;
+  }
+}
+
+.logo {
+  fill: $primary-icon-color;
+}
+
+.clients--link {
+  width: 210px;
+  height: 92px;
+  border: 1px solid $primary-icon-color;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover .logo,
+  &:focus .logo {
+    fill: $accent-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.clients--logo {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .logo {
+    width: 106px;
+    height: 60px;
+  }
+
+  & .link:hover,
+  & .link:focus {
+    border-color: $accent-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & a {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  & a:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  & a:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}

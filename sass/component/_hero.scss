@@ -1,41 +1,35 @@
 /*FOR MOBILE*/
 .hero {
-  @media screen and (min-width: 480px) {
-    & {
-      text-align: center;
+  & {
+    text-align: center;
 
-      max-width: 100%;
-      height: 400px;
-      margin-right: auto;
-      margin-left: auto;
+    max-width: 100%;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
 
-      background-image: linear-gradient(
-          to right,
-          $hero-gradient,
-          $hero-gradient
-        ),
-        url("../images/hero/Img.jpg");
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url("../images/hero/Img.jpg");
 
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-    &--container {
-      padding-top: 118px;
-      padding-bottom: 118px;
-    }
+  &--container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 
-    &--title {
-      color: $primary-white-color;
+  &--title {
+    color: $primary-white-color;
 
-      font-weight: 900;
-      font-size: 26px;
-      line-height: 42px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
 
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
   }
 }
