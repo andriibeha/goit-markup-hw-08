@@ -23,6 +23,12 @@
       padding-left: 0px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      top: 6px;
+    }
+  }
 }
 
 .main-nav button {

@@ -39,6 +39,12 @@
       padding-bottom: 26px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-right: 93px;
+    }
+  }
 }
 
 .main-nav__logo-title {
@@ -206,6 +212,42 @@
 
     &__link:hover &__tel {
       color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__link {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    & {
+      display: inherit;
+      flex-direction: row;
+
+      margin-left: auto;
+    }
+
+    &__icon-email {
+      width: 16px;
+      height: 12px;
+    }
+
+    &__icon-phone {
+      width: 10px;
+      height: 16px;
+    }
+
+    &__icon {
+      margin-right: 10px;
+    }
+
+    &__item {
+      margin-right: 30px;
+    }
+
+    &__item:last-child {
+      margin-right: 0;
     }
   }
 }

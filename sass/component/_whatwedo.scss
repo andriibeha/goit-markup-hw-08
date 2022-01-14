@@ -2,4 +2,51 @@
   & {
     display: none;
   }
+  @media screen and (min-width: 1200px) {
+    & {
+      display: block;
+    }
+  }
+}
+
+.whatwedo--title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.whatwedo--item {
+  margin-right: 30px;
+
+  position: relative;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+/*Label*/
+.whatwedo--list {
+  display: flex;
+
+  & .label--title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+
+  & .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    background-color: $label-bg;
+  }
 }

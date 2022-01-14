@@ -39,8 +39,26 @@
       margin-bottom: 0;
     }
 
-    &--title { 
+    &--title {
       text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &--list {
+      flex-wrap: nowrap;
+    }
+
+    &--item {
+      margin-bottom: 0;
+    }
+
+    &--item:nth-child(2n) {
+      margin-right: 30px;
+    }
+
+    &--item:last-child {
+      margin-right: 0;
     }
   }
 }

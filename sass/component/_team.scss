@@ -62,6 +62,31 @@
       margin-bottom: 0;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    &--title {
+      font-size: 36px;
+      line-height: 42px;
+
+      margin-bottom: 50px;
+    }
+
+    &--list {
+      flex-wrap: nowrap;
+    }
+
+    &--item {
+      margin-bottom: 0px;
+    }
+
+    &--item:nth-child(2n) {
+      margin-right: 30px;
+    }
+
+    &--item:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .social {

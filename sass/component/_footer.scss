@@ -117,6 +117,26 @@
   }
 }
 
+/*Геометрія Лого для Декстопа*/
+@media screen and (min-width: 1200px) {
+  .footer__container--tablet {
+    display: flex;
+  }
+
+  .footer .logo-address {
+    width: auto;
+  }
+
+  .footer .join {
+    width: auto;
+  }
+
+  .footer .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .footer .link:hover,
 .footer .link:focus {
   color: $accent-color;
@@ -178,4 +198,29 @@
 
   width: 200px;
   height: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .foot {
+    margin-left: 0;
+
+    margin-bottom: 0px;
+  }
+
+  .footer .main-nav__logo {
+    margin-left: -90px;
+  }
+
+  .foot .link {
+    display: block;
+    flex-wrap: nowrap;
+    margin-left: 0;
+
+    position: relative;
+    left: 0;
+  }
+
+  .footer .logo-address {
+    margin-right: 70px;
+  }
 }
