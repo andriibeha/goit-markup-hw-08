@@ -222,7 +222,7 @@ button {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    top: auto;
+    top: 11px;
     left: auto;
     padding-left: 0px;
   }
@@ -620,10 +620,6 @@ button {
           flex-direction: column-reverse;
 }
 
-.auth-nav__item:last-child .auth-nav__link {
-  color: #2196f3;
-}
-
 @media screen and (min-width: 768px) {
   .auth-nav {
     -webkit-box-orient: vertical;
@@ -644,6 +640,7 @@ button {
   .auth-nav__icon {
     display: block;
     margin-right: 8px;
+    fill: #757575;
   }
   .auth-nav__icon-phone {
     width: 14px;
@@ -659,19 +656,27 @@ button {
   .auth-nav__item:first-child {
     margin-bottom: 8px;
   }
-  .auth-nav__item:last-child .auth-nav__link {
-    color: #757575;
+  .auth-nav__link:hover .auth-nav__icon,
+  .auth-nav__link:focus .auth-nav__icon {
+    fill: #2196f3;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .auth-nav__link:hover .auth-nav__tel {
+    color: #2196f3;
   }
 }
 
-/*Container for tablet and deckstop*/
-.page-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+/*Line for  after header tablet+*/
+@media screen and (min-width: 768px) {
+  header {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
-/*Soc-nav  FOR MOBILE ONLY*/
+/*Soc-nav  FOR MOBILE ONLE*/
 .soc-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -795,6 +800,31 @@ button {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .description--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .description--item {
+    width: 354px;
+    height: 251px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .description--item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .description--item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .description--title {
+    text-align: left;
+  }
+}
+
 .des-label {
   background-color: #f5f4fa;
 }
@@ -843,7 +873,6 @@ button {
 }
 
 .team--item img {
-  width: 450px;
   margin-bottom: 30px;
 }
 
@@ -857,6 +886,26 @@ button {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .team--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team--item {
+    width: 354px;
+    margin-right: 30px;
+  }
+  .team--item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .team--item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 .social {
@@ -904,6 +953,12 @@ button {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .clients--link {
+    width: 226px;
+  }
+}
+
 .clients--logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -937,6 +992,18 @@ button {
 
 .clients--logo a:nth-last-child(-n + 2) {
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients--logo a:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .clients--logo a:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .clients--logo a:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .footer {
@@ -1047,6 +1114,28 @@ button {
   margin-bottom: 8px;
 }
 
+/*Геометрія Лого Tablet*/
+@media screen and (min-width: 768px) {
+  .footer__container--tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer .logo-address {
+    width: 50%;
+  }
+  .footer .join {
+    width: 50%;
+  }
+  .foot {
+    margin-right: 0;
+    margin-left: 76px;
+  }
+  .footer .main-nav__logo {
+    margin-right: 0px;
+  }
+}
+
 .footer .link:hover,
 .footer .link:focus {
   color: #2196f3;
@@ -1071,6 +1160,12 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .submit .signup {
+    display: block;
+  }
 }
 
 .signup input {
@@ -1176,10 +1271,26 @@ button {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .cards--item {
+    width: 354px;
+    margin-right: 30px;
+  }
+  .cards--item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
 .cards .cards-wraper {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cards .cards-wraper-first {
+    height: 146px;
+  }
 }
 
 .cards-wraper .title {
@@ -1226,5 +1337,15 @@ button {
 /*Даю колір який мені треба*/
 .cards-wraper p {
   color: #757575;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+  .categories {
+    margin-left: 79px;
+  }
+  .categories-button .categories {
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

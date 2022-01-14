@@ -93,6 +93,30 @@
   }
 }
 
+/*Геометрія Лого Tablet*/
+@media screen and (min-width: 768px) {
+  .footer__container--tablet {
+    display: flex;
+  }
+
+  .footer .logo-address {
+    width: 50%;
+  }
+
+  .footer .join {
+    width: 50%;
+  }
+
+  .foot {
+    margin-right: 0;
+    margin-left: 76px;
+  }
+
+  .footer .main-nav__logo {
+    margin-right: 0px;
+  }
+}
+
 .footer .link:hover,
 .footer .link:focus {
   color: $accent-color;
@@ -115,6 +139,12 @@
 .submit .signup {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: block;
+    }
+  }
 }
 
 .signup input {

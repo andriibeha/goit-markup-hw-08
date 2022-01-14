@@ -60,6 +60,18 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 354px;
+
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .cards .cards-wraper {
@@ -67,6 +79,12 @@
 
   border: 1px solid #eeeeee;
   border-top: none;
+
+  @media screen and (min-width: 768px) {
+    &-first {
+      height: 146px;
+    }
+  }
 }
 
 .cards-wraper .title {
@@ -115,4 +133,15 @@
 /*Даю колір який мені треба*/
 .cards-wraper p {
   color: $primary-text-color;
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+  .categories {
+    margin-left: 79px;
+  }
+
+  .categories-button .categories {
+    margin-bottom: 30px;
+  }
 }
