@@ -11,6 +11,18 @@
   &.is-open {
     display: block;
   }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+
+      position: relative;
+      top: auto;
+      left: auto;
+
+      padding-left: 0px;
+    }
+  }
 }
 
 .main-nav button {
@@ -21,5 +33,11 @@
 
   &:hover .menu-button__icon {
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: none;
+    }
   }
 }

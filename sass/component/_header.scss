@@ -30,6 +30,15 @@
   font-size: 24px;
   line-height: 1.2;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-right: 88px;
+
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
 }
 
 .main-nav__logo-title {
@@ -67,6 +76,46 @@
 
   &__item:last-child {
     margin-bottom: 302px;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 16px;
+
+      position: relative;
+    }
+
+    &__link::after {
+      content: "";
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+      width: 100%;
+      border: 2px solid #2196f3;
+      border-radius: 2px;
+      opacity: 0;
+    }
+
+    &__current::after {
+      opacity: 1;
+    }
+
+    &__item {
+      margin-bottom: 0;
+
+      margin-right: 50px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 0;
+
+      margin-right: 84px;
+    }
   }
 }
 
@@ -111,6 +160,53 @@
   &__item:last-child &__link {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 768px) {
+    & {
+      flex-direction: column;
+    }
+
+    &__link {
+      font-size: 12px;
+      line-height: 14px;
+
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      display: block;
+
+      margin-right: 8px;
+    }
+
+    &__icon-phone {
+      width: 14px;
+      height: 10px;
+    }
+
+    &__icon-email {
+      width: 10px;
+      height: 14px;
+    }
+
+    &__item {
+      margin-bottom: 0;
+    }
+
+    &__item:first-child {
+      margin-bottom: 8px;
+    }
+
+    &__item:last-child &__link {
+      color: $primary-text-color;
+    }
+  }
+}
+
+/*Container for tablet and deckstop*/
+.page-header .container {
+  display: flex;
 }
 
 /*Soc-nav  FOR MOBILE ONLY*/
@@ -143,5 +239,11 @@
 
   &__item:last-child &__link::after {
     border: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: none;
+    }
   }
 }
