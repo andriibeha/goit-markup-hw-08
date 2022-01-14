@@ -27,8 +27,6 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-
-  margin-top: -30px;
 }
 
 .categories--item {
@@ -45,11 +43,12 @@
 }
 
 .cards--item {
-  margin-right: 30px;
-  margin-top: 30px;
+  & {
+    margin-bottom: 30px;
+  }
 
-  &:nth-child(3n + 3) {
-    margin-right: 0px;
+  &:last-child {
+    margin-bottom: 0px;
   }
 
   &:hover {
@@ -83,21 +82,17 @@
 
 /*Портфоліо Card-label*/
 .card-label .text {
-  width: 370px;
-
   color: $primary-white-color;
 
   font-size: 18px;
   line-height: 28px;
 
+  height: 294px;
+
   padding-top: 63px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 63px;
-}
-
-.card-link {
-  position: relative;
 }
 
 .card-label {

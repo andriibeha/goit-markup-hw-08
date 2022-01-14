@@ -81,6 +81,12 @@ p {
   font-weight: 700;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*Оформлюю кнопку головну*/
 .button {
   color: #ffffff;
@@ -487,6 +493,14 @@ button {
   color: #212121;
 }
 
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196f3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .site-nav__current {
   color: #2196f3;
 }
@@ -510,6 +524,14 @@ button {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: #2196f3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav__item {
@@ -565,17 +587,61 @@ button {
   border: none;
 }
 
-/*FOR MOBILE*/
+.hero {
+  /*BG IMAGE*/
+}
+
 .hero {
   text-align: center;
   max-width: 100%;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/Img.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/mobile.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile.jpg");
+  /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/mobile2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile2x.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/tablet2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet2x.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/deckstop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/deckstop.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/deckstop2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/deckstop2x.jpg");
+    background-size: cover;
+  }
 }
 
 .hero--container {
@@ -958,7 +1024,6 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -30px;
 }
 
 .categories--item {
@@ -975,12 +1040,11 @@ button {
 }
 
 .cards--item {
-  margin-right: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.cards--item:nth-child(3n + 3) {
-  margin-right: 0px;
+.cards--item:last-child {
+  margin-bottom: 0px;
 }
 
 .cards--item:hover {
@@ -1012,18 +1076,14 @@ button {
 
 /*Портфоліо Card-label*/
 .card-label .text {
-  width: 370px;
   color: #ffffff;
   font-size: 18px;
   line-height: 28px;
+  height: 294px;
   padding-top: 63px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 63px;
-}
-
-.card-link {
-  position: relative;
 }
 
 .card-label {

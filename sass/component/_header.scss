@@ -49,6 +49,14 @@
     color: $title-text-color;
   }
 
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   &__current {
     color: $accent-color;
   }
@@ -76,6 +84,14 @@
     letter-spacing: 0.02em;
 
     color: $primary-text-color;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__item {
