@@ -1174,17 +1174,31 @@ button {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients--logo a {
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (min-width: 320px) {
+  .clients--logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .clients--logo a {
+    margin-bottom: 30px;
+  }
+  .clients--logo a:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.clients--logo a:nth-child(2n) {
-  margin-right: 0px;
-}
-
-.clients--logo a:nth-last-child(-n + 2) {
-  margin-bottom: 0px;
+@media screen and (min-width: 480px) {
+  .clients--logo a {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients--logo a:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .clients--logo a:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
