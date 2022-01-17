@@ -477,6 +477,27 @@ button {
   margin-left: -24px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero .modal {
+    width: 528px;
+  }
+  .modal-list input {
+    width: 448px;
+  }
+  .modal-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .modal .label-check {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 10px;
+  }
+  .modal .button--primary {
+    width: 200px;
+  }
+}
+
 /*Menu Button*/
 .menu-button .icon-cross {
   display: none;
@@ -524,6 +545,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .main-nav__logo {
+    font-size: 26px;
+    line-height: 31px;
     margin-right: 93px;
   }
 }
@@ -1415,12 +1438,12 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
   .foot {
     margin-left: 0;
     margin-bottom: 0px;
-  }
-  .footer .main-nav__logo {
-    margin-left: -90px;
   }
   .foot .link {
     display: block;
@@ -1428,10 +1451,32 @@ button {
         flex-wrap: nowrap;
     margin-left: 0;
     position: relative;
-    left: 0;
+    left: -45px;
   }
   .footer .logo-address {
     margin-right: 70px;
+    position: relative;
+    top: -10px;
+  }
+  .footer .join {
+    margin-right: 93px;
+  }
+  .signup input {
+    width: 342px;
+    margin-right: 17px;
+  }
+  .submit .signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .join {
+    margin-bottom: 0;
+  }
+  .footer .container {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
   }
 }
 
@@ -1576,6 +1621,31 @@ button {
   }
   .categories-button .categories {
     margin-bottom: 30px;
+  }
+}
+
+/*Deckstop*/
+@media screen and (min-width: 1200px) {
+  .categories-button .categories {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cards--item {
+    width: 370px;
+  }
+  .cards .cards-wraper-first {
+    height: auto;
+  }
+  .cards--item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .cards--item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .cards--item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

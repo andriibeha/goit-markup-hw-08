@@ -201,14 +201,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+
   .foot {
     margin-left: 0;
 
     margin-bottom: 0px;
-  }
-
-  .footer .main-nav__logo {
-    margin-left: -90px;
   }
 
   .foot .link {
@@ -217,10 +217,36 @@
     margin-left: 0;
 
     position: relative;
-    left: 0;
+    left: -45px;
   }
 
   .footer .logo-address {
     margin-right: 70px;
+
+    position: relative;
+
+    top: -10px;
+  }
+
+  .footer .join {
+    margin-right: 93px;
+  }
+
+  .signup input {
+    width: 342px;
+
+    margin-right: 17px;
+  }
+
+  .submit .signup {
+    display: flex;
+  }
+
+  .join {
+    margin-bottom: 0;
+  }
+
+  .footer .container {
+    align-items: normal;
   }
 }

@@ -227,3 +227,29 @@
 .modal .icon-checkbox {
   margin-left: -24px;
 }
+
+@media screen and (min-width: 1200px) {
+  .hero .modal {
+    width: 528px;
+  }
+
+  .modal-list input {
+    width: 448px;
+  }
+
+  .modal-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .modal .label-check {
+    font-size: 14px;
+    line-height: 24px;
+
+    margin-left: 10px;
+  }
+
+  .modal .button--primary {
+    width: 200px;
+  }
+}
