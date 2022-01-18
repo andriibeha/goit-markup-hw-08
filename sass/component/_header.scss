@@ -313,12 +313,21 @@
   left: 0;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media screen and (max-width: 767px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-  height: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .menu-button.is-open .main-nav {
