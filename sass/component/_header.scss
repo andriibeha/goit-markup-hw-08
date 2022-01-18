@@ -324,12 +324,10 @@
 }
 
 /*Fixed*/
-@media screen and (min-width: 768px) {
-  .flex-container {
+.flex-container {
     display: flex;
     flex-direction: row;
-  }
-}
+
 .menu-button.is-open .main-nav {
   position: fixed;
 }
