@@ -87,6 +87,13 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 /*Title*/
 .title {
   color: #212121;
@@ -209,10 +216,11 @@ button {
 }
 
 .menu-container {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 5%;
   left: 0;
   width: 100%;
+  height: 100%;
   background-color: #fff;
   display: none;
   padding-left: 40px;
@@ -583,7 +591,7 @@ button {
 }
 
 .site-nav__item:last-child {
-  margin-bottom: 302px;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -784,6 +792,35 @@ button {
   }
 }
 
+/*Fixed menu*/
+.menu-button.is-open::before {
+  content: "";
+  width: 50%;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80%;
+}
+
+.menu-button.is-open .main-nav {
+  position: fixed;
+}
+
 .hero {
   /*BG IMAGE*/
 }
@@ -887,6 +924,16 @@ button {
 
 .description p {
   margin-bottom: 30px;
+}
+
+.description--text {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1044,6 +1091,10 @@ button {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 16px;
+}
+
+.team--item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1494,6 +1545,13 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  footer {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
 /*Портфолио Portfolio Style*/
 /*Вирубую заголовок*/
 .primary-title {
@@ -1659,6 +1717,18 @@ button {
     margin-right: 0;
   }
   .cards--item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .categories--item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .categories--item {
     margin-bottom: 0;
   }
 }
