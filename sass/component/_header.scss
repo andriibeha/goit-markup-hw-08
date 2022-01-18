@@ -304,11 +304,11 @@
 /*Fixed menu*/
 .menu-button.is-open::before {
   content: "";
-  width: 50%;
-  height: 40px;
+  width: 100%;
+  height: 60px;
 
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -323,4 +323,10 @@
 
 .menu-button.is-open .main-nav {
   position: fixed;
+}
+
+.menu-button.is-open .menu-icon {
+  position: fixed;
+  right: 23px;
+  top: 0;
 }
