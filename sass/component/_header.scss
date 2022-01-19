@@ -325,8 +325,9 @@
 
 /*Fixed*/
 .flex-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
 
 .menu-button.is-open .main-nav {
   position: fixed;
@@ -336,4 +337,10 @@
   position: fixed;
   right: 23px;
   top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-right: 221px;
+  }
 }

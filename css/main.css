@@ -820,16 +820,14 @@ button {
 }
 
 /*Fixed*/
-@media screen and (min-width: 768px) {
-  .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .menu-button.is-open .main-nav {
@@ -840,6 +838,12 @@ button {
   position: fixed;
   right: 23px;
   top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-right: 221px;
+  }
 }
 
 .hero {
@@ -1570,6 +1574,12 @@ button {
   footer {
     padding-top: 60px !important;
     padding-bottom: 60px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join .title {
+    text-align: left;
   }
 }
 
